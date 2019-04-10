@@ -1,1 +1,8 @@
-test
+pull_request_rules:
+  - name: automatic merge for Corey pull requests on master
+    conditions:
+      - author=chobberoni
+      - base=master
+    actions:
+      merge:
+        method: merge
